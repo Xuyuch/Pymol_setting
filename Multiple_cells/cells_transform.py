@@ -1,8 +1,14 @@
+'''
+This code is used for create a searies of png files to show the dynamic changes of chromsome stucture.
+Need to be Optimize sothat we can control the number of input cells
+Worked on female mouse cell only.
+'''
+
 import pymol
 import os
 
 chromosomes = [f"chr{i}" if i != 20 else "chrX" for i in range(1, 21)]
-objects = [chr(i) for i in range(97, 97 + 18) if i != 112]
+objects = [chr(i) for i in range(97, 97 + 18) if i != 112]#112 is skipped is because 112=p and it is reserved for python or Pymol
 
 # Create an empty dictionary for each object to store coordinates
 coords_dicts = {}
