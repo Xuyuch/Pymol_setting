@@ -1,3 +1,9 @@
+'''
+This script is used to load 3dg files into pymol and uses female mouse cells
+The 3dg files should be names as 'a.exp.n' to 'z.exp.n'
+The 'p.exp.n' can't be loaded successfully. Reason maybe p is a reserved word for Pymol or Python
+Remember to turn off the undo to save time.
+'''
 for object_letter in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n','o']:
     cmd.do(f'load {object_letter}.exp.n.cif, {object_letter}.exp.n')  # Add this line to load the file.
     cmd.do(f'as sticks, {object_letter}.exp.n')
