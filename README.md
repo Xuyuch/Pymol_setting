@@ -1,3 +1,7 @@
+# Use hickit to generate the aggregate cells and compute 3d model
+Run the .sh file.
+
+
 # Pymol_setting for Two cells and Multiple cells
 Pymol's script for roatate and transform
 
