@@ -2,6 +2,7 @@
 This code is used for create a searies of png files to show the dynamic changes of chromsome stucture.
 Need to be Optimize sothat we can control the number of input cells
 Worked on female mouse cell only.
+Final state ball info should be store as the last character in the load cells. In this script, it is stored as r.exp.n
 '''
 
 import pymol
